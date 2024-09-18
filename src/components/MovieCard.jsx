@@ -1,8 +1,10 @@
-export default function MovieCard() {
+export default function MovieCard({titulo, id, imagem_destaque}) {
     return(
         <>
-        <h1>Movie Card</h1>
-        {/* Modelo de card que será utilizado para os filmes */}
+        <div>
+            <h2>{titulo}</h2>
+            <img src={`/${imagem_destaque}`}/>
+        </div>
         </>
     )
 
